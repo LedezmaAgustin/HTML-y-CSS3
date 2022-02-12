@@ -9,3 +9,80 @@ src:url(fuentes/Marcha.ttf) format(´truetype´)
 font-family: marchamocha;
 src:url(fuentes/Marcha.ttf) format(´truetype´)
 }
+
+/*Estilos basicos*/
+
+h1,h2,h3,h4,h5,h6{
+font-family:marchamocha;
+}
+
+p{
+	font-family: marchamocha;
+}
+
+/*Maquetación principal*/
+
+body{
+text-align: Center;
+margin: 0px;
+background: lightgray;
+}
+
+#principal{
+text-align: left;
+margin: auto;
+width: 80%;
+height: 100%;
+background: gray;
+position: relative;
+}
+
+#cajaheader{
+width: 100%;
+height: 100px;
+position: absolute;
+background: darkgray;
+}
+
+header{
+display: table;
+margin: auto;
+text-align: left;
+width: 100%;
+height: 100px;
+/*background: darkgrey;*/
+overflow: hidden;
+}
+
+footer{
+display: table;
+margin: 0px;
+text-align: center;
+padding: 0px;
+width: 100%;
+background: darkgray;
+}
+
+/*contenido*/
+
+#contenido{
+	width: 100%;
+}
+
+article{
+width: 50%;
+background: white;
+}
+
+aside{
+float: right;
+display: inline-table;
+with: 40%
+background: white;
+}
+
+#sobremi{
+width: 100%;
+height: 100%;
+background: blue;
+}
