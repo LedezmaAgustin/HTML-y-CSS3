@@ -5,6 +5,8 @@
 		<meta name="description" content="WebLog de Jose Vicente Carratala"/>
 		<meta name="keywords" content="webLog,blog,Jose Vicente Carratala,diseño,multimedia"/>
 		<meta http-equiv="refresh" content="50"/>
+		<link rel="stylesheet" href="css/all.css"/>
+
 		<link rel=stylesheet href="css/estilo.css" type="text/css" />
 		</head>
 		<body>
@@ -12,13 +14,18 @@
 
 			</div>
 			<div id="principal" itempcope itemtype="http://www.data-vocabulary.org/Persona">
-				<header>
+				<header id="cabesero">
 					<div id="logo"></div>
 					<h1><span itemprop="nam2">Jose Vicente Carratala</span></h1>
 					<h2><span itemprop="title">Creativo Multimedia</span></h2>
 					<nav>
 						<ul>
-							<li><canvas id="inicio" width="50" height="50" style="border:1px solid black;">"></canvas><a href="index.html">IconoInicio</a></li>
+							<li>
+								<div id="inicio">
+									<i class="fa-solid fa-circle-dot fa-2x"></i>
+								</div>
+								<a href="index.html">IconoInicio</a>
+							</li>
 							<li><canvas id="noticias" width="50" height="50" style="border: 1px solid black;"></canvas><a href="noticias.html">IconoNoticias</a></li>
 							<li><canvas id="sobreMi" width="50" height="50" style="border:1px solid black;"></canvas><a href="sobremihtml">IconoSobre mi</a></li>
 							<li><canvas id="contacto" width="50" height="50" style="border:1px solid black;"></canvas><a href="contacto.html">IconoContacto</a></li>	
@@ -26,8 +33,8 @@
 					</nav>
 				</header>
 				<div id="contenido">
-				<section id:"sobremi">
-					<span itemprop="photo"><img src="photo/josevicentecarratala.jpg" width=50px height=50px /></span>
+				<section id="sobremi">
+					<span itemprop="photo"><img src="img/medico.png" width=50px height=50px /></span>
 					<p>Pondre un texto que hable de mi Pondre un texto que hable de mi Pondre un texto que hable de mi Pondre un texto que hable de mi.<span itemprop="url"><a href="http://www.jocarsa.com"> http://www.jocarsa.com</a></span></p>
 				</section>
 				<aside>
@@ -97,7 +104,6 @@
 			</div>
 		</body>
 </html>
-
 <script type="text/javascript">
 
 	var micolor="Black";
