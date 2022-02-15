@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6{
 font-family:marchamocha;
 }
 
-h1,h2{
+h1{
 	transform: translate: (150px 0px);
 	position: relative;
 	color: white;
@@ -25,10 +25,39 @@ h1,h2{
 	margin-top: 10px;
 	letter-spacing: 0px;
 	display: inline;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
+
+h2{
+
+	color: white;
+	font-size: 16px;
+	top: -20%;
+	margin-top: 10px;
+	letter-spacing: 0px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+	font-size: 36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h4{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
 
 p{
 	font-family: marchamocha;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 
@@ -86,6 +115,7 @@ body{
 text-align: Center;
 margin: 0px;
 background: lightgray;
+background:url(´../img/negro.png´), url(´../img/fondo.jpg´);
 }
 
 #principal{
@@ -101,7 +131,7 @@ position: relative;
 width: 100%;
 height: 100px;
 position: absolute;
-background: darkgray;
+background: rgba(255,255,255,0.5);
 }
 
 header{
@@ -148,12 +178,14 @@ box-shadow: 0px 0px 10px white;
 	border: px solid white;
 
 	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.8);
+
 }
 
 article{
 width: 55%;
 /*background: white;*/
-
+background: rgba(255,255,255,0);
 margin: 10px;
 height: 100%;
 display: table;
@@ -161,6 +193,17 @@ border: 1px solid white;
 border-radius: 0px 25px 0px 25px;
 box-shadow: 3px 3px 10px black;
 padding:10px 10px 10px 150px ;
+opacity: 0.5;
+transition: opacity 1s,box-shadow 1s,transform 1s,background 1s;
+transform: scale(1,1);
+
+}
+
+article:hover{
+	background: rgba(255,255,255,1);
+	opacity: 1;
+	transform: scale(1.1,1.1);
+
 }
 
 time{
@@ -246,10 +289,114 @@ aside ul li a{
 	background-repeat: no-repeat;
 	display: box;
 
+	border: 1px solid white;
+	border:-radius: 0px 10px 0px 10px;
+	float: left;
+	margin: 10px;
+	animation: parpadeo 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo{
+
+	0% {box-shadow: 0px 0px 10px white;}
+	50% {box-shadow: 0px 0px 50px white;}
+	100% {box-shadow: 0px 0px 10px white;}
+
+}
+
+
+#logoblender{
+	width: 100px;
+	height: 100px;
+	font-family: marchomocha;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url(´../photo/josevicentecarratala.jpg´);
+	background: size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
 	boder: 1px solid white;
 	border:-radius: 0px 10px 0px 10px;
 	float: left;
 	margin: 10px;
+
+	position: absolute;
+	transform: translate(-140px,0px);
+}
+
+
+#logoactualidad3d{
+	width: 100px;
+	height: 100px;
+	font-family: marchomocha;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url(´../img/medico.png´);
+	background: size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	boder: 1px solid white;
+	border:-radius: 0px 10px 0px 10px;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	transform: translate(-140px,0px);
+}
+
+
+
+#logov2b{
+	width: 100px;
+	height: 100px;
+	font-family: marchomocha;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url(´../photo/actualidad3dlogo.jpg´);
+	background: size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	boder: 1px solid white;
+	border:-radius: 0px 10px 0px 10px;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	transform: translate(-140px,0px);
+}
+
+
+
+#mifotoarticulo{
+	width: 100px;
+	height: 100px;
+	font-family: marchomocha;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+
+	background: url(´../photo/usar-solid.svg´);
+	background: size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+
+	boder: 1px solid white;
+	border:-radius: 0px 10px 0px 10px;
+	float: left;
+	margin: 10px;
+
+	position: absolute;
+	transform: translate(-140px,0px);
 }
 
 
