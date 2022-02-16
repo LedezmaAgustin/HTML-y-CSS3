@@ -1,0 +1,10 @@
+zoom text sublime: ctrl + ruedita
+duplicar linea: (ctrl + shift) + d
+seleccionar palabra: ctrl + d
+copiar: ctrl + c
+cortar: ctrl + x
+pegar: ctrl + v
+nuevo archivo: ctrl + n
+cerrar archivo: ctrl + w
+mover linea: (ctrl + shift) + feclas (arriba, abajo)
+desplegar menu proyecto: ctrl + ( k y luego b) sin soltar ctrl
