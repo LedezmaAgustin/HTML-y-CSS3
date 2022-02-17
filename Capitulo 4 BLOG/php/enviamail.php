@@ -1,4 +1,42 @@
-﻿<?php
+﻿
+
+<!doctype HTML>
+<html>
+	<head manifest="/manifiesto/manifiesto.cache">
+		<title>WebLog de Jose Vicente Carratala</title>
+		<meta name="description" content="WebLog de Jose Vicente Carratala"/>
+		<meta name="keywords" content="webLog,blog,Jose Vicente Carratala,diseño,multimedia"/>
+		<meta http-equiv="refresh" content="50"/>
+		<link rel="stylesheet" href="../css/all.css"/>
+
+		<link rel=stylesheet href="css/estilo.css" type="text/css" />
+	</head>
+	<body>
+		<div id="cajaheader">
+
+		</div>
+		<div id="principal" itempcope itemtype="http://www.data-vocabulary.org/Persona">
+			<header id="cabesero">
+				<div id="logo"></div>
+				<h1><span itemprop="nam2">Jose Vicente Carratala</span></h1>
+				<h2><span itemprop="title">Creativo Multimedia</span></h2>
+				<nav>
+					<ul>
+						<li>
+							<div id="inicio">
+								<i class="fa-solid fa-circle-dot fa-2x"></i>
+							</div>
+							<a href="index.html">IconoInicio</a>
+						</li>
+						<li><a href="noticias.html"><canvas id="noticias" width="50" height="50" ></canvas><br />IconoNoticias</a></li>
+						<li><a href="sobremihtml"><canvas id="sobreMi" width="50" height="50" ></canvas><br />IconoSobre mi</a></li>
+						<li><a href="contacto.html"><canvas id="contacto" width="50" height="50" ></canvas><br />IconoContacto></a></li>	
+					</ul>
+				</nav>
+			</header>
+			<div id="contenido">
+
+			<?php
 header('Content-Type: text/html; charset=utf-8');
 //Recibo las variables de formulario
 
@@ -37,43 +75,8 @@ echo "El envio del mail ha fallado";
 
 
 
-?>
+?>	
 
-<!doctype HTML>
-<html>
-	<head manifest="/manifiesto/manifiesto.cache">
-		<title>WebLog de Jose Vicente Carratala</title>
-		<meta name="description" content="WebLog de Jose Vicente Carratala"/>
-		<meta name="keywords" content="webLog,blog,Jose Vicente Carratala,diseño,multimedia"/>
-		<meta http-equiv="refresh" content="50"/>
-		<link rel="stylesheet" href="css/all.css"/>
-
-		<link rel=stylesheet href="css/estilo.css" type="text/css" />
-	</head>
-	<body>
-		<div id="cajaheader">
-
-		</div>
-		<div id="principal" itempcope itemtype="http://www.data-vocabulary.org/Persona">
-			<header id="cabesero">
-				<div id="logo"></div>
-				<h1><span itemprop="nam2">Jose Vicente Carratala</span></h1>
-				<h2><span itemprop="title">Creativo Multimedia</span></h2>
-				<nav>
-					<ul>
-						<li>
-							<div id="inicio">
-								<i class="fa-solid fa-circle-dot fa-2x"></i>
-							</div>
-							<a href="index.html">IconoInicio</a>
-						</li>
-						<li><a href="noticias.html"><canvas id="noticias" width="50" height="50" ></canvas><br />IconoNoticias</a></li>
-						<li><a href="sobremihtml"><canvas id="sobreMi" width="50" height="50" ></canvas><br />IconoSobre mi</a></li>
-						<li><a href="contacto.html"><canvas id="contacto" width="50" height="50" ></canvas><br />IconoContacto></a></li>	
-					</ul>
-				</nav>
-			</header>
-			<div id="contenido">
 			</div>
 			<footer>
 			
