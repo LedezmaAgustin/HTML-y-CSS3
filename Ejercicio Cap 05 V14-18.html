@@ -5,6 +5,7 @@
 		<meta name="description" content="WebLog de Jose Vicente Carratala"/>
 		<meta name="keywords" content="webLog,blog,Jose Vicente Carratala,diseño,multimedia"/>
 		<meta http-equiv="refresh" content="50"/>
+		<link rel=stylesheet href="css/estilo.css" type="text/css" />
 		</head>
 		<body>
 			<div id="cajaheader">
@@ -17,10 +18,10 @@
 					<h2><span itemprop="title">Creativo Multimedia</span></h2>
 					<nav>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="noticias.html">Noticias</a></li>
-							<li><a href="sobremihtml">Sobre mi</a></li>
-							<li><a href="contacto.html">Contacto</a></li>	
+							<li><canvas id="inicio" width="50" height="50" style="border:1px solid black;">"></canvas><a href="index.html">IconoInicio</a></li>
+							<li><canvas id="noticias" width="50" height="50" style="border: 1px solid black;"></canvas><a href="noticias.html">IconoNoticias</a></li>
+							<li><canvas id="sobreMi" width="50" height="50" style="border:1px solid black;"></canvas><a href="sobremihtml">IconoSobre mi</a></li>
+							<li><canvas id="contacto" width="50" height="50" style="border:1px solid black;"></canvas><a href="contacto.html">IconoContacto</a></li>	
 						</ul>
 					</nav>
 				</header>
@@ -55,7 +56,7 @@
 						<h3>Sintel</h3>
 						<h4>Nuevo cortometraje de Blender Foundation</h4>
 						<p>Una vez más,vuelve a sorprender las capacidades de este maravilloso software libre de</p>
-						<video controls="controls width="300px" height="150px" preload="preload">
+						<video controls="controls" width="300px" height="150px" preload="preload">
 							<source src="video/sintel.ogg" type="video/ogg" />
 							<source src="video/sintel.mp4" type="video/mpeg" />
 							<source src="video/sintel.webm" type="video/webm" />
@@ -94,3 +95,102 @@
 			</div>
 		</body>
 </html>
+
+<script type="text/javascript">
+
+	var micolor="Black";
+	var miotrocolor="Grey";
+	var mitercercolor="White";
+	var escala=0.5;
+
+	//Dibujo el icono Sobre Mi
+
+	var c=document.getElementById("iconosobre mi");
+	var cxt=c.getContext("2d");
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*25,escaka*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*90,escala*40,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+
+	//Dibujo el icono Contacto
+
+	var c=document.getElementById("iconocontacto");
+	var cxt=c.getContext("2d");
+
+	cxt.fillStyle=("miotrocolor");
+	cxt.beginPath();
+	cxt.arc(50-10,25,20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("miotrocolor");
+	cxt.beginPath();
+	cxt.arc(50-10,90,40,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+
+	//Dibujo el icono inicio
+
+	var c=document.getElementById("iconoinicio");
+	var cxt=c.getContext("2d");
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(50+10,25,20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(50+10,90,40,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+
+	var c=document.getElementById("iconoinicio");
+	var cxt=c.getContext("2d");
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*40,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("mitercercolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*30,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	//Dibujo el icono Noticias
+
+	var c=document.getElementById("icononoticias");
+	var cxt=c.getContext("2d");
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escaka*20,0,Math.PI*2,true);
+	cxt.closePath;
+	cxt.fill();
+
+	cxt.fillStyle=("micolor");
+	cxt.beginPath();
+	cxt.arc(escala*50,escala*50,escala*40,Math.PI*2,false);
+	cxt.closePath;
+	cxt.fill();
+
+</script>
+	
